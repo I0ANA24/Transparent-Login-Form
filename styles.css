@@ -60,12 +60,12 @@ h2 {
     transform: translateY(-50%);
     font-size: 1em;
     color: #fff;
-    /* pointer-events: none; */
     transition: .5s;
 }
 
 .input-box input:focus~label,
-.input-box input:valid~label {
+.input-box input:valid~label,
+.input-box input:not(:placeholder-shown)~label {
     top: -5px;
 }
 
