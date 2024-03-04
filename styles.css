@@ -86,7 +86,20 @@ h2 {
     color: #fff;
     font-size: 1.2em;
     top: 35%;
-} 
+}
+
+.input-box input:-webkit-autofill,
+.input-box input:-webkit-autofill:hover,
+.input-box input:-webkit-autofill:focus,
+.input-box input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white;
+    caret-color: white;
+}
+
+.input-box input:-webkit-autofill::-webkit-input-c {
+    color: white;
+}
 
 .remember-forgot {
     margin: -15px 0 15px;
